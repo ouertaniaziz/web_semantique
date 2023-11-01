@@ -56,7 +56,11 @@ import Reviews from "layouts/reviews";
 import Forums from "layouts/Forums";
 import Messages from "layouts/Messages";
 import Request from "layouts/request";
-import Payment from "layouts/payment";
+import Payment from "layouts/payment";import Contract from "layouts/contract";
+import Inventory from "layouts/Inventory";
+
+import ConfiguratorRoot from "examples/Configurator/ConfiguratorRoot";
+
 const routes = [
   {
     type: "collapse",
@@ -121,6 +125,22 @@ const routes = [
     icon: <Icon fontSize="small">Messages</Icon>,
     route: "/messages",
     component: <Messages />,
+  },
+  {
+    type: "collapse",
+    name: "contracts",
+    key: "dashboard2",
+    icon: <Icon fontSize="small">Contracts</Icon>,
+    route: "/contracts",
+    component: <Contract />,
+  },
+  {
+    type: "collapse",
+    name: "inventories",
+    key: "dashboard3",
+    icon: <Icon fontSize="small">Inventory</Icon>,
+    route: "/inventories",
+    component: <Inventory />,
   },
 ];
 
